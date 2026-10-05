@@ -55,8 +55,9 @@ class listaSenhas:
     def imprimirListaEspera(self):
         atual = self.head
         while atual != None:
-            print(atual.cor, atual.numero )
+            print("[ ", atual.cor, atual.numero, " ]", end=" -> " )
             atual = atual.proximo
+        print("")    
 
     def atenderPaciente(self):
         if self.head == None:
@@ -68,12 +69,17 @@ class listaSenhas:
 op = 0
 lista = listaSenhas()
 while op !=4:
+    print("###################################")
+    print("###### TRIAGEM FILA DE ESPERA #####")
+    print("###################################")
     print("Escolha uma opção:")
+    print("")
     print("1 - Adicionar paciente a fila")
     print("2 - Mostrar pacientes na fila")
     print("3 - Chamar um paciente")
     print("4 - Sair")
-    op= int(input("Digite a opção: "))
+    print("")
+    op= int(input("Digite a opção >> "))
 
     if op == 1:
         lista.inserir()
