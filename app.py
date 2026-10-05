@@ -1,3 +1,4 @@
+"""
 class senha:
     def __init__(self, numero, cor):
         self.numero = numero
@@ -51,7 +52,6 @@ class listaSenhas:
             elif cor == "A":
                 self.inserirComPrioridade(novaSenha) 
 
-
     def imprimirListaEspera(self):
         atual = self.head
         while atual != None:
@@ -90,5 +90,4 @@ while op !=4:
     elif op ==4:
         break
     else:
-        print("Você digitou uma opção inválida")    
-
+        print("Você digitou uma opção inválida") """
